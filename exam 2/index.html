@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-black">
+    <aside
+      class="bg-black position-fixed start-0 top-0 bottom-0 d-flex closed no-animation"
+      id="aside"
+    >
+      <div class="links p-4 d-flex flex-column justify-content-between">
+        <div class="top">
+          <ul class="d-flex flex-column gap-3">
+            <li class="fw-light" data-section="Now Playing">Not Playing</li>
+            <li class="fw-light" data-section="Popular">Popular</li>
+            <li class="fw-light" data-section="Top Rated">Top Rated</li>
+            <li class="fw-light" data-section="Trending">Trending</li>
+            <li class="fw-light" data-section="Upcoming">Upcoming</li>
+            <li><a href="#Contact" class="fw-light">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="bottom">
+          <div class="social">
+            <ul class="d-flex gap-3 text-white fs-5">
+              <li><i class="fa-brands fa-facebook"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-solid fa-globe"></i></li>
+            </ul>
+          </div>
+          <footer class="text-secondary">
+            <div class="foot">
+              <p>Copywrite &copy; 2022 All Rights Reserverd.</p>
+            </div>
+            <div class="created">
+              <p>Created by <span>Hossam Ramadan</span></p>
+            </div>
+          </footer>
+        </div>
+      </div>
+      <div
+        class="a-nav bg-white p-4 d-flex flex-column justify-content-between"
+      >
+        <div class="img">
+          <img src="img/logo.png" alt="logo" class="w-100" />
+        </div>
+        <div class="toggle" id="asideToggle">
+          <i
+            class="fa-solid fa-bars fw-bolder fs-2 d-block"
+            id="toggleBars"
+          ></i>
+        </div>
+        <div class="shared d-flex flex-column gap-3 fs-5">
+          <i class="fa-solid fa-globe"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </aside>
+    <main class="text-white">
+      <div class="container">
+        <div class="movies">
+          <div class="search p-5">
+            <input
+              type="search"
+              id="movieSearch"
+              class="form-control w-75 m-auto rounded-pill border-3 bg-transparent text-white" 
+              placeholder="Search"
+            />
+          </div>
+          <div class="movies-card" id="moviesContainer">
+            <div class="container">
+              <div class="row gx-5 gy-4" id="moviesRow"></div>
+            </div>
+          </div>
+        </div>
+        <form id="Contact" class="py-5">
+          <h2 class="fw-light">Contact US</h2>
+          <div class="form">
+            <div class="row g-4">
+              <div class="col-12 col-md-6">
+                <div class="inner">
+                  <input
+                    class="form-control bg-transparent"
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Enter Your Name"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="inner">
+                  <input
+                    class="form-control bg-transparent"
+                    type="email"
+                    name="userEmail"
+                    id="userEmail"
+                    placeholder="Enter Your Email"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="inner">
+                  <input
+                    class="form-control bg-transparent"
+                    type="tel"
+                    name="userPhone"
+                    id="userPhone"
+                    placeholder="Enter Your Phone"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="inner">
+                  <input
+                    class="form-control bg-transparent"
+                    type="number"
+                    name="userAge"
+                    id="userAge"
+                    placeholder="Enter Your Age"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="inner">
+                  <input
+                    class="form-control bg-transparent"
+                    type="password"
+                    name="userPasword"
+                    id="userPasword"
+                    placeholder="Enter Your Password"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="inner">
+                  <input
+                    class="form-control bg-transparent"
+                    type="password"
+                    name="rePassword"
+                    id="rePassword"
+                    placeholder="ReEnter Password"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="inner">
+                  <button type="submit" class="btn rounded-1 w-25">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
